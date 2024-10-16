@@ -1,0 +1,9 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="NativeScript is pretty cool!" />
+
+    <StackLayout class="p-5">
+        <Label text="The Battery Level is:" class="text-2xl text-center" />
+        <Label text="{{ level ? level + '%' : '---' }}" class="text-4xl text-center font-bold mt-2" />
+        <Button text="{{ isListening ? 'Stop battery listener' : 'Listen to battery changes' }}" tap="{{toggleListenForChanges}}" class="text-xl text-white bg-[#00a2ff] rounded-full p-5 mt-5 normal-case"/>
+    </StackLayout>
+</Page>
